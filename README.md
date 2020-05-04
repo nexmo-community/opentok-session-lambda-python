@@ -80,7 +80,7 @@ POST `https://7ulasfasdasdfw4.execute-api.us-east-1.amazonaws.com/dev/session`
 
 The `session` endpoint will return the `session_id` needed to request a token.
 
-`https://7ulasfasdasdfw4.execute-api.us-east-1.amazonaws.com/dev/token/9807adsf0sae89fu0se87r0sf`
+GET `https://7ulasfasdasdfw4.execute-api.us-east-1.amazonaws.com/dev/token/9807adsf0sae89fu0se87r0sf`
 
 The `token` endpoing will return the `token` needed to interact with OpenTok.
 
