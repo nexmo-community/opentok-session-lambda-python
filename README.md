@@ -2,7 +2,7 @@
 A Flask based Python Lambda function to provide OpenTok session upon request.
 
 ## Prerequisites
-* Python
+* Python 3.7 (update `serverless.yml` if higher version is desired)
 * Pip
 * [Node.js](https://nodejs.org/en/) and npm
 * [Serverless Framework](https://serverless.com/framework/docs/getting-started/)
@@ -90,6 +90,8 @@ To exit the virtualenv you can deactivate it, when desired.
 ```bash
 deactivate
 ```
+
+NOTE: Depending on OS, you may need to prepend `virtualenv` to the command above.
 
 ## Contributing
 
