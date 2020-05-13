@@ -19,18 +19,18 @@ def session():
     args_array = []
     if request.method == 'POST':
         if request.form.get("location", None):
-            args_array.append("'location':u'" + request.form['location'] + "'")
+            args_array.append("'location'=u'" + request.form['location'] + "'")
 
         if request.form.get("media_mode", None):
-            args_array.append("'media_mode':" + request.form['media_mode'])
+            args_array.append("'media_mode'=" + request.form['media_mode'])
 
         if request.form.get("archive_mode", None):
-            args_array.append("'archive_mode':" + request.form['archive_mode'])
+            args_array.append("'archive_mode'=" + request.form['archive_mode'])
 
         if args_array:
             args = ', '.join(args_array)
 
-    otsession = opentok.create_session(**args)
+    otsession = opentok.create_session(args)
 
     session_id = otsession.session_id
 
