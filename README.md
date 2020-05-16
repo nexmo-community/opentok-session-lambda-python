@@ -61,8 +61,9 @@ There are 4 URL endpoints available with this client:
     - By passing a form POST like the following, you can change default parameters used to create a session: (defaults shown, if you leave the body empty.)
     
 ```text
-location=None, media_mode=MediaModes.relayed, archive_mode=ArchiveModes.manual
+location=None, media_mode=relayed, archive_mode=manual
 ```
+Note: See documentation for [media_mode](https://tokbox.com/developer/guides/create-session/#media-mode) and [archive_mode](https://tokbox.com/developer/guides/create-session/#archive-mode) options.
 
 NOTE: Location expects an IP address.
 
