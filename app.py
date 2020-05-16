@@ -15,19 +15,18 @@ def index():
 @app.route('/session', methods=['POST'])
 def session():
     error = None
-    args_dict = {}
+    kwargs = {}
     if request.method == 'POST':
         if request.form.get("location", None):
-            args_dict["location"] = "u'" + request.form['location'] + "'"
+            kwargs["location"] = request.form['location']
 
         if request.form.get("media_mode", None):
-            args_dict["media_mode"] = request.form['media_mode']
+            kwargs["media_mode"] = request.form['media_mode']
 
         if request.form.get("archive_mode", None):
-            args_dict["archive_mode"] = request.form['archive_mode']
+            kwargs["archive_mode"] = request.form['archive_mode']
 
-    # otsession = opentok.create_session(location=u'12.34.56.78', media_mode=MediaModes.routed, archive_mode=ArchiveModes.always)
-    otsession = opentok.create_session(**args_dict)
+    otsession = opentok.create_session(**kwargs)
 
     session_id = otsession.session_id
 
