@@ -26,6 +26,7 @@ def session():
         if request.form.get("archive_mode", None):
             kwargs["archive_mode"] = request.form['archive_mode']
 
+    # otsession = opentok.create_session(location='12.34.56.78', media_mode=MediaModes.routed, archive_mode=ArchiveModes.always)
     otsession = opentok.create_session(**kwargs)
 
     session_id = otsession.session_id
