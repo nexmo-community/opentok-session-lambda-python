@@ -71,7 +71,7 @@ NOTE: Location expects an IP address.
     - You can then request a new session by passing the `<session_id>` to the `/token` endpoint.
 
 ##### Examples:
-Go to the URL provided by the deploy process. Below are some examples of what sample requests may look like:
+Go to the URL provided by the deploy process. Below are some examples of what sample requests may look like: (Your URL will vary.)
 
 GET `https://7ulasfasdasdfw4.execute-api.us-east-1.amazonaws.com/dev/`
 
